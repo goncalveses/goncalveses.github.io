@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esdras Gonçalves — Apps</title>
+<meta name="description" content="Página do desenvolvedor Esdras Gonçalves: apps, políticas de privacidade e contato.">
+<link rel="icon" href="mily.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fafafa; --card: #ffffff; --ink: #1d1d1f; --muted: #6e6e73;
+    --line: #e6e6e6; --accent: #e0287a; --accent-soft: #fde7f1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111113; --card: #1c1c1f; --ink: #f2f2f4; --muted: #a1a1a6;
+      --line: #2c2c30; --accent: #ff5ca8; --accent-soft: #3a1a2a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 Poppins, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 16px 40px; }
+  h1 { font-size: 30px; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .lead { color: var(--muted); margin: 0 0 40px; }
+  h2 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 14px; }
+  .app {
+    display: flex; gap: 18px; align-items: flex-start;
+    background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px;
+  }
+  .app img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+  .app h3 { margin: 0; font-size: 20px; font-weight: 600; }
+  .app p { margin: 4px 0 12px; color: var(--muted); font-size: 15px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .links a {
+    font-size: 14px; font-weight: 500; text-decoration: none; color: var(--accent);
+    background: var(--accent-soft); padding: 6px 12px; border-radius: 999px;
+  }
+  .links a:hover { text-decoration: underline; }
+  section + section { margin-top: 40px; }
+  .contact a { color: var(--accent); }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+  @media (max-width: 480px) {
+    main { padding-top: 40px; }
+    .app { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Esdras Gonçalves</h1>
+    <p class="lead">Desenvolvedor independente de apps Android.</p>
+  </header>
+
+  <section>
+    <h2>Apps</h2>
+    <article class="app">
+      <img src="mily.jpg" alt="Ícone do Mily">
+      <div>
+        <h3>Mily</h3>
+        <p>Transmissões ao vivo, chat e chamadas de vídeo. Para maiores de 18 anos.</p>
+        <div class="links">
+          <a href="https://mily.live">Site</a>
+          <a href="https://mily.live/privacyPolicy.html">Política de privacidade</a>
+          <a href="https://mily.live/termOfUse.html">Termos de uso</a>
+          <a href="https://mily.live/deleteAccount.html">Excluir conta</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="contact">
+    <h2>Contato</h2>
+    <p>Suporte: <a href="mailto:support@mily.live">support@mily.live</a><br>
+       Privacidade: <a href="mailto:privacy@mily.live">privacy@mily.live</a></p>
+  </section>
+
+  <footer>© 2026 Esdras Gonçalves</footer>
+</main>
+</body>
+</html>
